@@ -89,14 +89,28 @@ INSERT IGNORE INTO reservations (id, house_id, user_id, checkin_date, checkout_d
 INSERT IGNORE INTO reservations (id, house_id, user_id, checkin_date, checkout_date, number_of_people, amount) VALUES (11, 11, 1, '2023-04-01', '2023-04-02', 2, 6000);
 
 -- reviewsテーブル
-INSERT IGNORE INTO reviews (id, house_id, user_id, name, comments, score) VALUES (1, 1, 1, '侍 太郎', '素晴らしい滞在でした。また利用したいです。',5);
-INSERT IGNORE INTO reviews (id, house_id, user_id, name, comments, score) VALUES (2, 1, 2, '侍 花子', '部屋が綺麗で、快適に過ごせました。',4);
-INSERT IGNORE INTO reviews (id, house_id, user_id, name, comments, score) VALUES (3, 1, 3, '侍 義勝', 'アクセスが良く、観光に最適でした。',4);
-INSERT IGNORE INTO reviews (id, house_id, user_id, name, comments, score) VALUES (4, 1, 4, '侍 幸美', 'スタッフが親切で、気持ちよく滞在できました。',5);
-INSERT IGNORE INTO reviews (id, house_id, user_id, name, comments, score) VALUES (5, 1, 5, '侍 雅', '駅から近く、便利でした。',4);
-INSERT IGNORE INTO reviews (id, house_id, user_id, name, comments, score) VALUES (6, 1, 6, '侍 正保', '周辺の飲食店が充実していて、楽しめました。', 5);
-INSERT IGNORE INTO reviews (id, house_id, user_id, name, comments, score) VALUES (7, 1, 7, '侍 真由美', '宿泊費が手頃で、コストパフォーマンスが良かったです。',4);
-INSERT IGNORE INTO reviews (id, house_id, user_id, name, comments, score) VALUES (8, 1, 8, '侍 安民', '静かな環境でゆっくり休めました',3);
-INSERT IGNORE INTO reviews (id, house_id, user_id, name, comments, score) VALUES (9, 1, 9, '侍 章緒', '敷地内の設備が充実していました。',4);
-INSERT IGNORE INTO reviews (id, house_id, user_id, name, comments, score) VALUES (10, 1, 10, '侍 祐子', 'Wi-Fiが快適で助かりました。',5);
-INSERT IGNORE INTO reviews (id, house_id, user_id, name, comments, score) VALUES (11, 1, 11, '侍 秋美', '清潔感があり、気持ちよく滞在できました。',4);
+-- INSERT IGNORE INTO reviews (id, house_id, user_id, name, comments, score) VALUES (1, 1, 1, '侍 太郎', '素晴らしい滞在でした。また利用したいです。',5);
+-- INSERT IGNORE INTO reviews (id, house_id, user_id, name, comments, score) VALUES (2, 1, 2, '侍 花子', '部屋が綺麗で、快適に過ごせました。',4);
+-- INSERT IGNORE INTO reviews (id, house_id, user_id, name, comments, score) VALUES (3, 1, 3, '侍 義勝', 'アクセスが良く、観光に最適でした。',4);
+-- INSERT IGNORE INTO reviews (id, house_id, user_id, name, comments, score) VALUES (4, 1, 4, '侍 幸美', 'スタッフが親切で、気持ちよく滞在できました。',5);
+-- INSERT IGNORE INTO reviews (id, house_id, user_id, name, comments, score) VALUES (5, 1, 5, '侍 雅', '駅から近く、便利でした。',4);
+-- INSERT IGNORE INTO reviews (id, house_id, user_id, name, comments, score) VALUES (6, 1, 6, '侍 正保', '周辺の飲食店が充実していて、楽しめました。', 5);
+-- INSERT IGNORE INTO reviews (id, house_id, user_id, name, comments, score) VALUES (7, 1, 7, '侍 真由美', '宿泊費が手頃で、コストパフォーマンスが良かったです。',4);
+-- INSERT IGNORE INTO reviews (id, house_id, user_id, name, comments, score) VALUES (8, 1, 8, '侍 安民', '静かな環境でゆっくり休めました',3);
+-- INSERT IGNORE INTO reviews (id, house_id, user_id, name, comments, score) VALUES (9, 1, 9, '侍 章緒', '敷地内の設備が充実していました。',4);
+-- INSERT IGNORE INTO reviews (id, house_id, user_id, name, comments, score) VALUES (10, 1, 10, '侍 祐子', 'Wi-Fiが快適で助かりました。',5);
+-- INSERT IGNORE INTO reviews (id, house_id, user_id, name, comments, score) VALUES (11, 1, 11, '侍 秋美', '清潔感があり、気持ちよく滞在できました。',4);
+
+-- reviewsテーブル
+ INSERT IGNORE INTO reviews (id, house_id, user_id, score, content) VALUES (1, 1, 1, 5, '素晴らしい滞在でした。また利用したいです。');
+ INSERT IGNORE INTO reviews (id, house_id, user_id, score, content) VALUES (2, 1, 2, 4, '部屋が綺麗で、快適に過ごせました。');
+ INSERT IGNORE INTO reviews (id, house_id, user_id, score, content) VALUES (3, 1, 3, 4, 'アクセスが良く、観光に最適でした。');
+ INSERT IGNORE INTO reviews (id, house_id, user_id, score, content) VALUES (4, 1, 4, 5, 'スタッフが親切で、気持ちよく滞在できました。');
+ INSERT IGNORE INTO reviews (id, house_id, user_id, score, content) VALUES (5, 1, 5, 4, '駅から近く、便利でした。');
+ INSERT IGNORE INTO reviews (id, house_id, user_id, score, content) VALUES (6, 1, 6, 5, '周辺の飲食店が充実していて、楽しめました。');
+ INSERT IGNORE INTO reviews (id, house_id, user_id, score, content) VALUES (7, 1, 7, 4, '宿泊費が手頃で、コストパフォーマンスが良かったです。');
+ INSERT IGNORE INTO reviews (id, house_id, user_id, score, content) VALUES (8, 1, 8, 3, '静かな環境でゆっくり休めました。');
+ INSERT IGNORE INTO reviews (id, house_id, user_id, score, content) VALUES (9, 1, 9, 4, '施設内の設備が充実していました。');
+ INSERT IGNORE INTO reviews (id, house_id, user_id, score, content) VALUES (10, 1, 10, 5, 'Wi-Fiが快適で助かりました。');
+ INSERT IGNORE INTO reviews (id, house_id, user_id, score, content) VALUES (11, 1, 11, 4, '清潔感があり、気持ちよく滞在できました。');
+ INSERT IGNORE INTO reviews (id, house_id, user_id, score, content) VALUES (12, 1, 12, 5, '部屋が広く、ゆったり過ごせました。');
